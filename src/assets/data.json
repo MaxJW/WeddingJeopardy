@@ -1,0 +1,362 @@
+{
+	"rounds": [
+		{
+			"categories": [
+				{
+					"name": "Musicals",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				},
+				{
+					"name": "Superheroes",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				},
+				{
+					"name": "Weddings",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				},
+				{
+					"name": "Firsts",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				},
+				{
+					"name": "Photo Round",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				}
+			]
+		},
+		{
+			"categories": [
+				{
+					"name": "Category 1",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				},
+				{
+					"name": "Category 2",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				},
+				{
+					"name": "Category 3",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				},
+				{
+					"name": "Category 4",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				},
+				{
+					"name": "Category 5",
+					"questions": [
+						{
+							"points": 100,
+							"question": "What is the capital of France?",
+							"answer": "Paris",
+							"done": false
+						},
+						{
+							"points": 200,
+							"question": "What is the largest planet in our solar system?",
+							"answer": "Jupiter",
+							"done": false
+						},
+						{
+							"points": 300,
+							"question": "What is the smallest country in the world?",
+							"answer": "Vatican City",
+							"done": false
+						},
+						{
+							"points": 400,
+							"question": "What is the highest mountain in the world?",
+							"answer": "Mount Everest",
+							"done": false
+						},
+						{
+							"points": 500,
+							"question": "What is the capital of Japan?",
+							"answer": "Tokyo",
+							"done": false
+						}
+					]
+				}
+			]
+		}
+	]
+}
