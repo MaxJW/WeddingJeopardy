@@ -2,9 +2,15 @@
     import Jeopardy from './components/Jeopardy.svelte';
 
     let start = false;
+    let password = '';
+    const hash = (s) =>
+        s.split('').reduce((a, b) => {
+            a = (a << 5) - a + b.charCodeAt(0);
+            return a & a;
+        }, 0);
 </script>
 
-{#if start}
+{#if start && hash(password) === 1278903590}
     <Jeopardy />
 {:else}
     <div class="center">
@@ -15,6 +21,10 @@
                 start = true;
             }}>Start</button
         >
+        <div id="password-container">
+            <label for="password">Password:</label>
+            <input id="password" bind:value={password} type="password" />
+        </div>
     </div>
 {/if}
 
