@@ -10,7 +10,7 @@
         }, 0);
 </script>
 
-{#if start && hash(password) === 1278903590}
+{#if start && hash(password) === -1711369051}
     <Jeopardy />
 {:else}
     <div class="center">

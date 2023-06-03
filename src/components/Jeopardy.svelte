@@ -7,6 +7,8 @@
     let activeRound = 0;
     const rounds = jsonData.rounds;
     let categories = rounds[activeRound].categories;
+
+    let moneyBig = true;
     let activeQuestion = null;
     let answerRevealed = false;
     let allQuestionsDone = false;
@@ -19,8 +21,12 @@
         allQuestionsDone = false;
     }
 
-    function showQuestion(question) {
+    async function showQuestion(question) {
         activeQuestion = question;
+        moneyBig = true;
+        setTimeout(() => {
+            moneyBig = false;
+        }, 2000);
     }
 
     function showAnswer() {
@@ -37,9 +43,20 @@
 
     function handleKeyPress(e) {
         if (!activeQuestion) return;
-        if (e.code === 'Escape') {
-            hideQuestion();
-        } else if (e.code === 'Space') {
+        switch (e.code) {
+            case 'Escape':
+                hideQuestion();
+                break;
+            case 'Space':
+                moveForward();
+                break;
+            default:
+                break;
+        }
+    }
+
+    function moveForward() {
+        if (!moneyBig) {
             answerRevealed ? hideQuestion() : showAnswer();
         }
     }
@@ -65,7 +82,7 @@
                         class:done={question.done}
                         on:click={() => showQuestion(question)}
                     >
-                        {question.done ? '✅' : '£' + question.points}
+                        {question.done ? '✅' : question.points}
                     </div>
                 {/if}
             {/each}
@@ -73,15 +90,29 @@
     {/each}
 
     {#if activeQuestion !== null}
-        <div class="question-modal" transition:scale>
+        <!-- svelte-ignore a11y-click-events-have-key-events -->
+        <div class="question-modal" transition:scale on:click={moveForward}>
             <div class="modal-content">
-                <h2>{activeQuestion.question}</h2>
-                {#if answerRevealed}
-                    <h2>---</h2>
-                    <h2 transition:fade>{activeQuestion.answer}</h2>
-                    <button on:click={hideQuestion}>Close</button>
+                {#if moneyBig}
+                    <h2 in:fade>{activeQuestion.points}</h2>
+                {:else if answerRevealed}
+                    {#if activeQuestion.answer.startsWith('img:')}
+                        <img
+                            in:fade
+                            src="/src/assets/picture_round/{activeQuestion.answer.substring(4)}.jpg"
+                            alt="Answer"
+                        />
+                    {:else}
+                        <h2 in:fade>{activeQuestion.answer}</h2>
+                    {/if}
+                {:else if activeQuestion.question.startsWith('img:')}
+                    <img
+                        in:fade
+                        src="/src/assets/picture_round/{activeQuestion.question.substring(4)}.jpg"
+                        alt="Question"
+                    />
                 {:else}
-                    <button on:click={showAnswer}>Show Answer</button>
+                    <h2 in:fade>{activeQuestion.question}</h2>
                 {/if}
             </div>
         </div>
@@ -106,13 +137,14 @@
     }
 
     .category {
-        font-size: 1.5rem;
+        font-size: 1.75rem;
         font-weight: bold;
         display: flex;
         align-items: center;
         justify-content: center;
         background-color: #4a684c;
         color: white;
+        border-radius: 2%;
     }
 
     .tile {
@@ -124,9 +156,10 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-size: 2rem;
+        font-size: 3rem;
         font-weight: bold;
         color: #2d3748;
+        border-radius: 2%;
     }
 
     .done {
@@ -141,16 +174,29 @@
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
+        flex-direction: column;
         z-index: 999;
-        background-color: white;
+        background-color: #cfdfd0;
         text-align: center;
+        cursor: default;
     }
 
     .question-modal .modal-content {
         text-align: center;
-        font-size: 4em;
+        font-size: 7em;
+        text-transform: uppercase;
+        padding: 75px;
+    }
+
+    .modal-content h2 {
+        color: #2d3748;
+    }
+
+    .modal-content img {
+        max-height: 90vh;
+        max-width: 90vw;
     }
 
     .next-round-button {
