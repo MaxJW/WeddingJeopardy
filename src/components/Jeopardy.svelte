@@ -99,7 +99,7 @@
                     {#if activeQuestion.answer.startsWith('img:')}
                         <img
                             in:fade
-                            src="/src/assets/picture_round/{activeQuestion.answer.substring(4)}.jpg"
+                            src="../assets/picture_round/{activeQuestion.answer.substring(4)}.jpg"
                             alt="Answer"
                         />
                     {:else}
@@ -108,7 +108,7 @@
                 {:else if activeQuestion.question.startsWith('img:')}
                     <img
                         in:fade
-                        src="/src/assets/picture_round/{activeQuestion.question.substring(4)}.jpg"
+                        src="../assets/picture_round/{activeQuestion.question.substring(4)}.jpg"
                         alt="Question"
                     />
                 {:else}
