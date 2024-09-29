@@ -131,7 +131,7 @@
     .jeopardy-board {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 6rem repeat(5, calc((100vh - 16.7rem) / 5));
+        grid-template-rows: 6rem repeat(4, calc((100vh - 16.7rem) / 4));
         grid-gap: 1rem;
         padding: 1rem;
     }
@@ -142,7 +142,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        background-color: #4a684c;
+        background-color: var(--shade);
         color: white;
         border-radius: 2%;
     }
@@ -152,18 +152,18 @@
         height: 100%;
         margin: 0;
         cursor: pointer;
-        background-color: #cbe0cf;
+        background-color: var(--primary);
         display: flex;
         align-items: center;
         justify-content: center;
         font-size: 3rem;
         font-weight: bold;
-        color: #2d3748;
+        color: white;
         border-radius: 2%;
     }
 
     .done {
-        background-color: #4a684c;
+        background-color: var(--shade);
         color: white;
     }
 
@@ -178,7 +178,7 @@
         align-items: center;
         flex-direction: column;
         z-index: 999;
-        background-color: #cfdfd0;
+        background-color: var(--primary);
         text-align: center;
         cursor: default;
     }
@@ -191,7 +191,7 @@
     }
 
     .modal-content h2 {
-        color: #2d3748;
+        color: white;
     }
 
     .modal-content img {
@@ -200,7 +200,7 @@
     }
 
     .next-round-button {
-        background-color: #48bb78;
+        background-color: var(--tint);
         position: fixed;
         top: 0;
         left: 0;

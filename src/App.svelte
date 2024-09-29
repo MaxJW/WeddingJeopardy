@@ -10,21 +10,18 @@
         }, 0);
 </script>
 
-{#if start && hash(password) === -1711369051}
+{#if start}
     <Jeopardy />
 {:else}
     <div class="center">
-        <h1 class="welcome-text">Welcome to</h1>
-        <h1 class="title-text">Wedding Jeopardy</h1>
+        <h1 class="title">Book Jeopardy</h1>
+        <h2 class="subtitle">The Thursday <span>Murder</span> Club</h2>
+        <h1 class="title">Edition</h1>
         <button
             on:click={() => {
                 start = true;
             }}>Start</button
         >
-        <div id="password-container">
-            <label for="password">Password:</label>
-            <input id="password" bind:value={password} type="password" />
-        </div>
     </div>
 {/if}
 
@@ -39,15 +36,25 @@
         color: #212427;
     }
 
-    .welcome-text {
-        font-size: 4rem;
-        margin-bottom: 0;
+    .title {
+        font-size: 6rem;
+        margin: 0;
+    }
+    .subtitle {
+        font-family: 'Mate', serif;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 10rem;
+        margin: 0;
     }
 
-    .title-text {
-        font-size: 8rem;
-        margin-top: 0;
-        font-family: 'Great Vibes', cursive;
-        margin-bottom: 2rem;
+    .subtitle span {
+        font-style: normal;
+        font-weight: bold;
+        color: var(--primary);
+    }
+
+    button {
+        margin-top: 2rem;
     }
 </style>

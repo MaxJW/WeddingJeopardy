@@ -1,3 +1,9 @@
+:root {
+	--primary: #ca2b15;
+	--tint: #d55544;
+	--shade: #a22211;
+}
+
 body,
 html {
 	margin: 0px auto;
@@ -15,7 +21,7 @@ html {
 	box-sizing: border-box;
 	border: 30px solid;
 	border-image-source: url(/src/assets/border.png);
-	border-image-slice: 181 337 204 212;
+	border-image-slice: 185 336 164 231;
 	border-image-width: 182px 337px 201px 209px;
 	border-image-outset: 0px 0px 0px 0px;
 	border-image-repeat: stretch repeat;
